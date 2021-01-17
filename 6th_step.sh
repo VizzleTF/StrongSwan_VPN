@@ -2,6 +2,7 @@
 
 sudo ufw allow OpenSSH
 sudo ufw enable
+sudo ufw allow 22
 sudo ufw allow 500,4500/udp
 
 ext_interface () {
