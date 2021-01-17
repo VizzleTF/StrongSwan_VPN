@@ -32,7 +32,7 @@ COMMIT" >> /etc/ufw/before.rules;
 
 scp /etc/ufw/sysctl.conf /etc/ufw/sysctl.conf.bkp;
 
-sed 's!#net/ipv4/ip_forward=1!net/ipv4/ip_forward=1!g' /etc/ufw/sysctl.conf.bkp >> /etc/ufw/sysctl.conf;
+sed 's!#net/ipv4/ip_forward=1!net/ipv4/ip_forward=1!g' /etc/ufw/sysctl.conf.bkp > /etc/ufw/sysctl.conf;
 
 echo "
 #################################
