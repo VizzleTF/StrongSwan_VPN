@@ -21,6 +21,9 @@ ipsec pki --pub --in ~/pki/private/server-key.pem --type rsa \
 			            --dn "CN=$IP" --san "$IP" \
 				            --flag serverAuth --flag ikeIntermediate --outform pem \
 					        >  ~/pki/certs/server-cert.pem;
+
+sudo cp -r ~/pki/* /etc/ipsec.d/
+
 echo "done"
 echo " "
 
