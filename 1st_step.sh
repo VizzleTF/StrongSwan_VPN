@@ -1,0 +1,22 @@
+#!/bin/bash
+
+##########################
+#			 #
+#	update repo      #
+#    install strongSwan  #
+#			 #
+##########################
+
+
+update="apt update;";
+install="apt install --assume-yes strongswan strongswan-pki libcharon-extra-plugins;"
+
+echo "updating repositories.."
+apt-get update >> /dev/null; 
+echo "done"
+
+echo "installing StrongSwan.."
+apt-get install --assume-yes strongswan strongswan-pki libcharon-extra-plugins | tail -n1;
+echo "done"
+echo "Go to step 2!" 
+
