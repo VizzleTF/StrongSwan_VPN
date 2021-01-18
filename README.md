@@ -1,10 +1,11 @@
-## Auto-configure StrongSwan VPN IKEv2
+# Auto-configure StrongSwan VPN IKEv2
 
 - Auto-configure StrongSwan VPN IKEv2
 - The script is guaranteed to work on AWS EC2 Ubuntu 20.04 LTS
 
 
-# Install:
+
+## Install:
 1. sudo -i                                               #run script from root only!
 2. git clone https://github.com/VizzleTF/StrongSwan_VPN  #copy script to your machine 
 3. cd StrongSwan_VPN/                                    #go to script directory 
