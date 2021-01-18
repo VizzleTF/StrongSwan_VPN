@@ -662,8 +662,11 @@ sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 1
 clear
+
+ufw disable > /dev/null;
+ufw enable > /dev/null;
 
 echo " \
 "
