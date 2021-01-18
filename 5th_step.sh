@@ -32,11 +32,13 @@ read user
 echo " \
 "
 
-sleep 0.5
+sleep 1
 
 echo "Enter your password:"
 
 read password
+
+sleep 1
 
 clear
 
