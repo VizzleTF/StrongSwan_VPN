@@ -1,8 +1,52 @@
-#setting system
+echo "#############################"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "##                         ##"
+sleep 0.1
+echo "##      Opening ports      ##"
+sleep 0.1
+echo "##                         ##"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "#############################"
+sleep 0.5
 
 sudo ufw allow OpenSSH
 sudo ufw allow 22
 sudo ufw allow 500,4500/udp
+
+echo "#############################"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "##                         ##"
+sleep 0.1
+echo "##          Done           ##"
+sleep 0.1
+echo "##                         ##"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "#############################"
+sleep 0.5
+clear
+
+echo "#############################"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "##                         ##"
+sleep 0.1
+echo "##     Defining right      ##"
+sleep 0.1
+echo "##       interface         ##"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "#############################"
+sleep 0.5
 
 ext_interface () {
     for interface in /sys/class/net/*
@@ -15,7 +59,69 @@ ext_interface () {
 
 interface=$(ext_interface);
 
+echo "#############################"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "##                         ##"
+sleep 0.1
+echo "##     Done! it's $interface     ##"
+sleep 0.1
+echo "##                         ##"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "#############################"
+sleep 0.5
+clear
+
+echo "#############################"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "##                         ##"
+sleep 0.1
+echo "##       Backing up        ##"
+sleep 0.1
+echo "##  /etc/ufw/before.rules  ##"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "#############################"
+sleep 0.5
+
 scp /etc/ufw/before.rules /etc/ufw/before.rules.bkp;
+
+echo "#############################"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "##                         ##"
+sleep 0.1
+echo "##          Done           ##"
+sleep 0.1
+echo "##                         ##"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "#############################"
+sleep 0.5
+clear
+
+echo "#############################"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "##                         ##"
+sleep 0.1
+echo "##    Setting Firewall     ##"
+sleep 0.1
+echo "##                         ##"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "#############################"
+sleep 0.5
 
 sed 's!processed! \
 -A ufw-before-forward --match policy --pol ipsec --dir in --proto esp -s 10.10.10.0/24 -j ACCEPT \
@@ -34,21 +140,37 @@ scp /etc/ufw/sysctl.conf /etc/ufw/sysctl.conf.bkp;
 
 sed 's!#net/ipv4/ip_forward=1!net/ipv4/ip_forward=1!g' /etc/ufw/sysctl.conf.bkp > /etc/ufw/sysctl.conf;
 
-echo "
-#################################
-#				#
-#				#
-#				#
-#	HERE IS YOUR KEY	#
-#				#
-#				#
-#################################
+echo "#############################"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "##                         ##"
+sleep 0.1
+echo "##          Done           ##"
+sleep 0.1
+echo "##                         ##"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "#############################"
+sleep 0.5
+clear
 
-
-
-
-
-"
+echo "#############################"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "##                         ##"
+sleep 0.1
+echo "##    HERE IS YOUR KEY!    ##"
+sleep 0.1
+echo "##                         ##"
+sleep 0.1
+echo "####                     ####"
+sleep 0.1
+echo "#############################"
+sleep 0.5
+clear
 
 
 
