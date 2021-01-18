@@ -19,10 +19,16 @@ echo ": RSA \"server-key.pem\" " >> /etc/ipsec.secrets
 
 clear
 
+echo " "
 echo "Enter your vpn user:"
+echo " "
 read user
+echo " "
 echo "Enter your password:"
+echo " "
 read password
+
+clear
 
 echo "#############################"
 sleep 0.1
