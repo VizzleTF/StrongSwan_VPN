@@ -621,12 +621,12 @@ sed 's!processed! \
 -A ufw-before-forward --match policy --pol ipsec --dir out --proto esp -d 10.10.10.0/24 -j ACCEPT !g' /etc/ufw/before.rules.bkp > /etc/ufw/before.rules.tmp;
 
 sed '/*filter/ i *nat \
--A POSTROUTING -s 10.10.10.0/24 -o $interface -m policy --pol ipsec --dir out -j ACCEPT \
--A POSTROUTING -s 10.10.10.0/24 -o $interface -j MASQUERADE \
+-A POSTROUTING -s 10.10.10.0/24 -o '$interface' -m policy --pol ipsec --dir out -j ACCEPT \
+-A POSTROUTING -s 10.10.10.0/24 -o '$interface' -j MASQUERADE \
 COMMIT\
 \
 *mangle \
--A FORWARD --match policy --pol ipsec --dir in -s 10.10.10.0/24 -o $interface -p tcp -m tcp --tcp-flags SYN,RST SYN -m tcpmss --mss 1361:1536 -j TCPMSS --set-mss 1360 \
+-A FORWARD --match policy --pol ipsec --dir in -s 10.10.10.0/24 -o '$interface' -p tcp -m tcp --tcp-flags SYN,RST SYN -m tcpmss --mss 1361:1536 -j TCPMSS --set-mss 1360 \
 COMMIT/g' /etc/ufw/before.rules.tmp > /etc/ufw/before.rules;
 
 scp /etc/ufw/sysctl.conf /etc/ufw/sysctl.conf.bkp;
