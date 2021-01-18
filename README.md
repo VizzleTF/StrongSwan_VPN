@@ -18,5 +18,5 @@
 
 
 ### .
-- Writed on Bash
+##### - Writed on Bash
 - By  VizzleTF 
