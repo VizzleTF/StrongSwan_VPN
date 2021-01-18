@@ -1,10 +1,7 @@
 - Writed on Bash
-- Auto-install VPN IKEv2
+- Auto-configure StrongSwan VPN IKEv2
+- The script is guaranteed to work on AWS EC2 Ubuntu 20.04 LTS
 
-- Script work for AWS EC2 Ubuntu 20.04 LTS
-
-- By  VizzleTF  
-- https://github.com/VizzleTF/StrongSwan_VPN
 
 # Install:
 1. git clone https://github.com/VizzleTF/StrongSwan_VPN
@@ -15,3 +12,6 @@
 6. Enter you user and password
 7. Copy your ca-cert.pem to client device
 8. You always can find it at /etc/ipsec.d/cacerts/ca-cert.pem
+
+
+- By  VizzleTF 
