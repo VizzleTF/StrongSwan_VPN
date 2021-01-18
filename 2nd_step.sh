@@ -143,7 +143,7 @@ echo "####                     ####"
 sleep 0.1
 echo "##                         ##"
 sleep 0.1
-echo "##      Go to step 2!      ##"
+echo "##      Go to step 3!      ##"
 sleep 0.1
 echo "##                         ##"
 sleep 0.1
