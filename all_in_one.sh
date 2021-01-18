@@ -201,7 +201,7 @@ echo "#############################"
 sleep 0.5
 
 ipsec pki --self --ca --lifetime 3650 --in ~/pki/private/ca-key.pem \
-	    --type rsa --dn "CN=github_VizzleTF" --outform pem > ~/pki/cacerts/ca-cert.pem;
+	    --type rsa --dn "CN=github.com/VizzleTF" --outform pem > ~/pki/cacerts/ca-cert.pem;
 
 echo "#############################"
 sleep 0.1
@@ -627,7 +627,7 @@ COMMIT\
 \
 *mangle \
 -A FORWARD --match policy --pol ipsec --dir in -s 10.10.10.0/24 -o $interface -p tcp -m tcp --tcp-flags SYN,RST SYN -m tcpmss --mss 1361:1536 -j TCPMSS --set-mss 1360 \
-COMMIT' /etc/ufw/before.rules.tmp > /etc/ufw/before.rules;
+COMMIT/g' /etc/ufw/before.rules.tmp > /etc/ufw/before.rules;
 
 scp /etc/ufw/sysctl.conf /etc/ufw/sysctl.conf.bkp;
 
