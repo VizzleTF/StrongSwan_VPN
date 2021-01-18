@@ -24,21 +24,18 @@ echo " \
 
 echo "Enter your vpn user:"
 
-echo " \
-"
-
 read user
 
 echo " \
 "
 
-sleep 1
+sleep 0.7
 
 echo "Enter your password:"
 
 read password
 
-sleep 1
+sleep 0.7
 
 clear
 
