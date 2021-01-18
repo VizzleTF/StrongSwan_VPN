@@ -1,16 +1,16 @@
 #!/bin/bash
 echo "###########################"
-sleep 0.3
+sleep 0.2
 echo "###########################"
-sleep 0.3
+sleep 0.2
 echo "##########  Hi  ###########"
-sleep 0.3
+sleep 0.2
 echo "#########  from  ##########"
-sleep 0.3
+sleep 0.2
 echo "#######  VizzleTF  ########"
-sleep 0.3
+sleep 0.2
 echo "###########################"
-sleep 0.3
+sleep 0.2
 echo "###########################"
 sleep 0.1
 echo "###########################"
@@ -26,6 +26,7 @@ sleep 0.1
 echo "#                         #"
 sleep 0.1
 echo "###########################"
+sleep 0.5
 
 apt-get update >> /dev/null;
 
@@ -42,6 +43,7 @@ sleep 0.1
 echo "#                         #"
 sleep 0.1
 echo "###########################"
+sleep 0.5
 
 echo "###########################"
 sleep 0.1
@@ -56,6 +58,7 @@ sleep 0.1
 echo "#                         #"
 sleep 0.1
 echo "###########################"
+sleep 0.5
 
 apt-get install --assume-yes strongswan strongswan-pki libcharon-extra-plugins > /dev/null;
 
@@ -72,7 +75,7 @@ sleep 0.1
 echo "#                         #"
 sleep 0.1
 echo "###########################"
-sleep 0.3
+sleep 0.5
 echo "###########################"
 sleep 0.1
 echo "#                         #"
