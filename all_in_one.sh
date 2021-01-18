@@ -83,25 +83,6 @@ echo "#############################"
 sleep 0.5
 clear
 
-echo "#############################"
-sleep 0.1
-echo "####                     ####"
-sleep 0.1
-echo "##                         ##"
-sleep 0.1
-echo "##      Go to step 2!      ##"
-sleep 0.1
-echo "##                         ##"
-sleep 0.1
-echo "####                     ####"
-sleep 0.1
-echo "#############################"
-sleep 0.1
-echo "#############################"
-sleep 0.6
-
-#!/bin/bash
-
 clear
 
 echo "#############################"
@@ -245,21 +226,6 @@ echo "####                     ####"
 sleep 0.1
 echo "##                         ##"
 sleep 0.1
-echo "##      Go to step 3!      ##"
-sleep 0.1
-echo "##                         ##"
-sleep 0.1
-echo "####                     ####"
-sleep 0.1
-echo "#############################"
-sleep 0.6
-clear
-echo "#############################"
-sleep 0.1
-echo "####                     ####"
-sleep 0.1
-echo "##                         ##"
-sleep 0.1
 echo "##  Generating close key.. ##"
 sleep 0.1
 echo "##                         ##"
@@ -368,23 +334,6 @@ echo "####                     ####"
 sleep 0.1
 echo "##                         ##"
 sleep 0.1
-echo "##      Go to step 4!      ##"
-sleep 0.1
-echo "##                         ##"
-sleep 0.1
-echo "####                     ####"
-sleep 0.1
-echo "#############################"
-sleep 0.1
-echo "#############################"
-sleep 0.6
-
-echo "#############################"
-sleep 0.1
-echo "####                     ####"
-sleep 0.1
-echo "##                         ##"
-sleep 0.1
 echo "##  Backing up ipsec.conf  ##"
 sleep 0.1
 echo "##                         ##"
@@ -411,9 +360,6 @@ sleep 0.1
 echo "#############################"
 sleep 0.5
 clear
-
-echo "Please enter IP address of your VPN server:"
-read IP
 
 echo "#############################"
 sleep 0.1
@@ -473,24 +419,6 @@ sleep 0.1
 echo "#############################"
 sleep 0.5
 clear
-
-echo "#############################"
-sleep 0.1
-echo "####                     ####"
-sleep 0.1
-echo "##                         ##"
-sleep 0.1
-echo "##      Go to step 5!      ##"
-sleep 0.1
-echo "##                         ##"
-sleep 0.1
-echo "####                     ####"
-sleep 0.1
-echo "#############################"
-sleep 0.1
-echo "#############################"
-sleep 0.6
-# setting autentification vpn
 
 echo "#############################"
 sleep 0.1
@@ -564,22 +492,6 @@ echo "#############################"
 sleep 0.5
 clear
 
-echo "#############################"
-sleep 0.1
-echo "####                     ####"
-sleep 0.1
-echo "##                         ##"
-sleep 0.1
-echo "##      Go to step 6!      ##"
-sleep 0.1
-echo "##                         ##"
-sleep 0.1
-echo "####                     ####"
-sleep 0.1
-echo "#############################"
-sleep 0.1
-echo "#############################"
-sleep 0.6
 echo "#############################"
 sleep 0.1
 echo "####                     ####"
@@ -754,7 +666,13 @@ echo "#############################"
 sleep 0.5
 clear
 
-
-
 cat /etc/ipsec.d/cacerts/ca-cert.pem
 
+
+####################################
+#	                           #
+#	                           #
+#	     Have fun!             #
+#	                           #
+#	                           #
+####################################
