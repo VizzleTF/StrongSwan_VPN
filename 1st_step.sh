@@ -1,15 +1,17 @@
 #!/bin/bash
 echo "###########################"
 sleep 0.1
-echo "#######            ########"
+echo "###########################"
 sleep 0.1
-echo "######      Hi      #######"
+echo "#####                ######"
+sleep 0.1
+echo "###         Hi         ####"
 sleep 0.2
-echo "######     from     #######"
+echo "###        from        ####"
 sleep 0.2
-echo "######   VizzleTF   #######"
+echo "###      VizzleTF      ####"
 sleep 0.2
-echo "#######            ########"
+echo "#####                ######"
 sleep 0.1
 echo "###########################"
 sleep 0.1
