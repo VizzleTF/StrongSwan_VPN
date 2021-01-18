@@ -254,6 +254,7 @@ clear
 
 echo "Please enter IP address of your VPN server:"
 read IP
+clear
 
 echo "#############################"
 sleep 0.1
