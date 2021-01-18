@@ -7,12 +7,32 @@
 #			 #
 ##########################
 
-echo "updating repositories.."
+echo "###########################
+#                         #
+# updating repositories.. #
+#                         #
+###########################"
 apt-get update >> /dev/null; 
-echo "done"
+echo "###########################
+#                         #
+#          done           #
+#                         #
+###########################"
 
-echo "installing StrongSwan.."
+echo "###########################
+#                         #
+# installing StrongSwan.. #
+#                         #
+###########################"
 apt-get install --assume-yes strongswan strongswan-pki libcharon-extra-plugins > /dev/null;
-echo "done"
-echo "Go to step 2!" 
+echo "###########################
+#                         #
+#          done           #
+#                         #
+###########################"
+echo "###########################
+#                         #
+#      Go to step 2!      #
+#                         #
+###########################"
 
