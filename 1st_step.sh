@@ -1,39 +1,48 @@
 #!/bin/bash
-
-##########################
-#			 #
-#	update repo      #
-#    install strongSwan  #
-#			 #
-##########################
-
+echo "###########################
+###########################
+##########  Hi  ###########
+#########  from  ##########
+#######  VizzleTF  ########
+###########################
+###########################"
 echo "###########################
 #                         #
-# updating repositories.. #
+#                         #
+# Updating repositories.. #
+#                         #
 #                         #
 ###########################"
 apt-get update >> /dev/null; 
 echo "###########################
 #                         #
-#          done           #
+#                         #
+#          Done           #
+#                         #
 #                         #
 ###########################"
 
 echo "###########################
 #                         #
-# installing StrongSwan.. #
+#                         #
+# Installing StrongSwan.. #
+#                         #
 #                         #
 ###########################"
 apt-get install --assume-yes strongswan strongswan-pki libcharon-extra-plugins > /dev/null;
 echo "###########################
 #                         #
-#          done           #
+#                         #
+#          Done           #
+#                         #
 #                         #
 ###########################"
-sleep 2
+sleep 5
 echo "###########################
 #                         #
+#                         #
 #      Go to step 2!      #
+#                         #
 #                         #
 ###########################"
 
