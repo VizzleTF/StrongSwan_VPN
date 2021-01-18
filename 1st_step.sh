@@ -1,98 +1,98 @@
 #!/bin/bash
 clear
-echo "###########################"
+echo "#############################"
 sleep 0.1
-echo "###########################"
+echo "#############################"
 sleep 0.1
-echo "####                   ####"
+echo "####                     ####"
 sleep 0.1
-echo "##          Hi           ##"
+echo "##           Hi            ##"
 sleep 0.2
-echo "##         from          ##"
+echo "##          from           ##"
 sleep 0.2
-echo "##       VizzleTF        ##"
+echo "##        VizzleTF         ##"
 sleep 0.2
-echo "####                   ####"
+echo "####                     ####"
 sleep 0.1
-echo "###########################"
+echo "#############################"
 sleep 0.1
-echo "###########################"
+echo "#############################"
 sleep 0.1
-echo "###                     ###"
+echo "####                     ####"
 sleep 0.1
-echo "#                         #"
+echo "##                         ##"
 sleep 0.1
-echo "# Updating repositories.. #"
+echo "## Updating repositories.. ##"
 sleep 0.1
-echo "#                         #"
+echo "##                         ##"
 sleep 0.1
-echo "###                     ###"
+echo "####                     ####"
 sleep 0.1
-echo "###########################"
+echo "#############################"
 sleep 0.5
 
 apt-get update >> /dev/null;
 
-echo "###########################"
+echo "#############################"
 sleep 0.1
-echo "###                     ###"
+echo "####                     ####"
 sleep 0.1
-echo "#                         #"
+echo "##                         ##"
 sleep 0.1
-echo "#          Done           #"
+echo "##          Done           ##"
 sleep 0.1
-echo "#                         #"
+echo "##                         ##"
 sleep 0.1
-echo "###                     ###"
+echo "####                     ####"
 sleep 0.1
-echo "###########################"
+echo "#############################"
 sleep 0.5
 
-echo "###########################"
+echo "#############################"
 sleep 0.1
-echo "###                     ###"
+echo "####                     ####"
 sleep 0.1
-echo "#                         #"
+echo "##                         ##"
 sleep 0.1
-echo "# Installing StrongSwan.. #"
+echo "## Installing StrongSwan.. ##"
 sleep 0.1
-echo "#                         #"
+echo "##                         ##"
 sleep 0.1
-echo "###                     ###"
+echo "####                     ####"
 sleep 0.1
-echo "###########################"
+echo "#############################"
 sleep 0.5
 
 apt-get install --assume-yes strongswan strongswan-pki libcharon-extra-plugins > /dev/null;
 
-echo "###########################"
+echo "#############################"
 sleep 0.1
-echo "###                     ###"
+echo "####                     ####"
 sleep 0.1
-echo "#                         #"
+echo "##                         ##"
 sleep 0.1
-echo "#          Done           #"
+echo "##          Done           ##"
 sleep 0.1
-echo "#                         #"
+echo "##                         ##"
 sleep 0.1
-echo "###                     ###"
+echo "####                     ####"
 sleep 0.1
-echo "###########################"
+echo "#############################"
 sleep 0.5
-echo "###########################"
+echo "#############################"
 sleep 0.1
-echo "###                     ###"
+echo "####                     ####"
 sleep 0.1
-echo "#                         #"
+echo "##                         ##"
 sleep 0.1
-echo "#      Go to step 2!      #"
+echo "##      Go to step 2!      ##"
 sleep 0.1
-echo "#                         #"
+echo "##                         ##"
 sleep 0.1
-echo "###                     ###"
+echo "####                     ####"
 sleep 0.1
-echo "###########################"
+echo "#############################"
 sleep 0.1
-echo "###########################"
+echo "#############################"
 sleep 0.6
 
