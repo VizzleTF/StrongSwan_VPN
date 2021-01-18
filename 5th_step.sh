@@ -21,15 +21,21 @@ clear
 
 echo " \
 "
+
 echo "Enter your vpn user:"
+
 echo " \
 "
+
 read user
+
 echo " \
 "
+
+sleep 0.5
+
 echo "Enter your password:"
-echo " \
-"
+
 read password
 
 clear
