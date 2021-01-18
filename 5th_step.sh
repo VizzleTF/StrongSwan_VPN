@@ -31,7 +31,9 @@ echo " \
 
 sleep 0.7
 
-echo "Enter your password:" && read password
+echo "Enter your password:" 
+
+read password
 
 sleep 0.7
 
