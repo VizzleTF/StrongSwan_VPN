@@ -7,10 +7,6 @@
 #			 #
 ##########################
 
-
-update="apt update;";
-install="apt install --assume-yes strongswan strongswan-pki libcharon-extra-plugins;"
-
 echo "updating repositories.."
 apt-get update >> /dev/null; 
 echo "done"
