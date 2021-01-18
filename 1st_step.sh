@@ -92,5 +92,5 @@ sleep 0.1
 echo "###                     ###"
 sleep 0.1
 echo "###########################"
-sleep 1
+sleep 0.6
 
