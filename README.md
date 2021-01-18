@@ -4,14 +4,15 @@
 
 
 # Install:
-1. git clone https://github.com/VizzleTF/StrongSwan_VPN
-2. cd StrongSwan_VPN/
-3. chmod a+x all_in_one.sh
-4. ./all_in_one.sh
-5. Enter your IP
-6. Enter you user and password
-7. Copy your ca-cert.pem to client device
-8. You always can find it at /etc/ipsec.d/cacerts/ca-cert.pem
+1. sudo -i                                               #run script from root only!
+2. git clone https://github.com/VizzleTF/StrongSwan_VPN  #copy script to your machine 
+3. cd StrongSwan_VPN/ #go to script directory 
+4. chmod u+x all_in_one.sh #
+5. ./all_in_one.sh
+6. Enter your IP
+7. Enter you user and password
+8. Copy your ca-cert.pem to client device
+9. You always can find it at /etc/ipsec.d/cacerts/ca-cert.pem
 
 
 - By  VizzleTF 
