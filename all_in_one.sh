@@ -21,11 +21,11 @@ sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "##           Hi            ##"
-sleep 0.2
+sleep 0.1
 echo "##          from           ##"
-sleep 0.2
+sleep 0.1
 echo "##        VizzleTF         ##"
-sleep 0.2
+sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
@@ -45,7 +45,7 @@ sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 0.2
 
 apt-get update >> /dev/null;
 
@@ -78,7 +78,7 @@ sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 0.2
 
 apt-get install --assume-yes strongswan strongswan-pki libcharon-extra-plugins > /dev/null;
 
@@ -113,7 +113,7 @@ sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 0.2
 
 mkdir -p ~/pki/{cacerts,certs,private};
 
@@ -146,7 +146,7 @@ sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 0.2
 
 chmod 700 ~/pki;
 
@@ -179,7 +179,7 @@ sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 0.2
 
 ipsec pki --gen --type rsa --size 4096 --outform pem > ~/pki/private/ca-key.pem;
 
@@ -207,12 +207,12 @@ echo "##                         ##"
 sleep 0.1
 echo "##      making center      ##"
 sleep 0.1
-echo "##    of sertification..   ##"
+echo "##    of certification..   ##"
 sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 0.2
 
 ipsec pki --self --ca --lifetime 3650 --in ~/pki/private/ca-key.pem \
 	    --type rsa --dn "CN=github.com/VizzleTF" --outform pem > ~/pki/cacerts/ca-cert.pem;
@@ -246,7 +246,7 @@ sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 0.2
 
 ipsec pki --gen --type rsa --size 4096 --outform pem > ~/pki/private/server-key.pem;
 
@@ -275,14 +275,14 @@ echo "####                     ####"
 sleep 0.1
 echo "##                         ##"
 sleep 0.1
-echo "##   Adding sertificate    ##"
+echo "##   Adding certificate    ##"
 sleep 0.1
 echo "##  for your VPN server..  ##"
 sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 0.2
 
 ipsec pki --pub --in ~/pki/private/server-key.pem --type rsa \
 	    | ipsec pki --issue --lifetime 1825 \
@@ -321,7 +321,7 @@ sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 0.2
 
 sudo cp -r ~/pki/* /etc/ipsec.d/
 
@@ -354,7 +354,7 @@ sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 0.2
 
 sudo mv /etc/ipsec.conf{,.original}; 
 
@@ -387,7 +387,7 @@ sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 0.2
 
 echo "config setup
     charondebug=\"ike 1, knl 1, cfg 0\"
@@ -446,7 +446,7 @@ sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 0.2
 
 echo ": RSA \"server-key.pem\" " >> /etc/ipsec.secrets
 
@@ -462,13 +462,13 @@ read user
 echo " \
 "
 
-sleep 0.7
+sleep 0.5
 
 echo "Enter your password:" 
 
 read password
 
-sleep 0.7
+sleep 0.3
 
 clear
 
@@ -485,7 +485,7 @@ sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 0.2
 
 echo $user : EAP $password >>/etc/ipsec.secrets
 
@@ -518,7 +518,7 @@ sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 0.2
 
 sudo ufw allow OpenSSH
 sudo ufw allow 22
@@ -553,7 +553,7 @@ sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 0.1
 
 ext_interface () {
     for interface in /sys/class/net/*
@@ -595,7 +595,7 @@ sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 0.1
 
 scp /etc/ufw/before.rules /etc/ufw/before.rules.bkp;
 
@@ -628,7 +628,7 @@ sleep 0.1
 echo "####                     ####"
 sleep 0.1
 echo "#############################"
-sleep 0.5
+sleep 0.1
 
 sed 's!processed! \
 -A ufw-before-forward --match policy --pol ipsec --dir in --proto esp -s 10.10.10.0/24 -j ACCEPT \
